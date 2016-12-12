@@ -1,0 +1,11 @@
+Object relational mapper ORM
+SQL can hold strings and integers
+objects and arrays more dynamic
+sql tables can be represented as objects using ORM
+
+MVC - model view controller
+Model: Application core(data core) -HTML
+View: Displaying the data -CSS
+Controller: Handles the action/inputs outputs -JS
+Split between client and server
+React: Component based controller, each component's model, view, controller
