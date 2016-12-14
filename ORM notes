@@ -9,3 +9,13 @@ View: Displaying the data -CSS
 Controller: Handles the action/inputs outputs -JS
 Split between client and server
 React: Component based controller, each component's model, view, controller
+
+Sequelize: ORM - promise based
+advantages: Supports multiple SQL based databases
+sequelize model: representation of a table, can hide passwords and fields
+
+npm install sequelize-cli
+
+mysql -u root -p ???
+
+RESTful API design: GET, PUT, POST, DELETE to simplify api
