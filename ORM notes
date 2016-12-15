@@ -19,3 +19,35 @@ npm install sequelize-cli
 mysql -u root -p ???
 
 RESTful API design: GET, PUT, POST, DELETE to simplify api
+POST request: req.body
+GET request: req.params
+validation: in views and models
+Front end validation, easy by turn off js or chrome dev tools
+back end validation, save bandwidth using back end validation
+
+Relationships/associations
+Post
+	id, title, body ...
+Author
+	id, name ...
+	Use foreign keys (hasOne/hasMany or belongsTo sequelize functions)
+	Normalization to reduce duplicates
+	sequeliza capitalizes foreign keys AuthorId
+
+	left outer join& right outer join
+Exceptions:
+'use strict';
+
+// Get filename from user
+var filename  = process.argv[2],
+    mockError = require('./helpers.js').mockError,
+    readFile  = require('./helpers.js').readFile;
+
+// Try to read from the file system, but move on if there's an issue.
+try {
+  readFile(filename);
+} catch (err) {
+  console.log('Error reading ' + filename + '. Error logged. Continuing...');
+}
+
+console.log('The rest of your program worked!');
